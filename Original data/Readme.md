@@ -7,3 +7,5 @@ The code and datasets can be used for research purposes, provided that following
 
 You can share your research results on the corresponding "Papers with code" website:
 https://paperswithcode.com/dataset/extmarker
+
+Dataset licensed under the CC BY-NC-SA 4.0 license
