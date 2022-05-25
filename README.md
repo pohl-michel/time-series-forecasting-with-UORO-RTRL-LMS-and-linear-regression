@@ -5,7 +5,7 @@ The figure below gives an example of prediction 2.0s in advance with UORO (the s
 ![alt text](prediction_UORO.png "prediction with UORO for sequence 4 and a horizon of 2.0s")
 
 This code supports the claims in the following article:
-Pohl, Michel, et al. “Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy.” ArXiv:2106.01100 [Cs, Eess], June 2021. arXiv.org, http://arxiv.org/abs/2106.01100.
+Pohl, Michel, et al. “Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy.” ArXiv:2106.01100 [Cs, Eess], May 2022. arXiv.org, http://arxiv.org/abs/2106.01100.
 Please consider citing our article if you use this code in your research.
 
 The data provided in the directories "1. Input time series sequences" and "Original data" consists of the three-dimensional position of external markers placed on the chest and abdomen of healthy individuals breathing during intervals from 73s to 222s. The markers move because of the respiratory motion, and their position is sampled at approximately 10Hz.
@@ -37,4 +37,5 @@ One can also use GPU computing to try to make the RNN calculations faster by set
 In that case, the parallel processing toolbox of Matlab is required.
 Calculations are faster with the GPU when using RTRL with a relatively high number of hidden units.
 
-
+ 	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prediction-of-the-position-of-external/multivariate-time-series-forecasting-on-3)](https://paperswithcode.com/sota/multivariate-time-series-forecasting-on-3?p=prediction-of-the-position-of-external)
