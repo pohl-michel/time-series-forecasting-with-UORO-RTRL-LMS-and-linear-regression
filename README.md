@@ -15,9 +15,10 @@ Krilavicius, Tomas, et al. “Predicting Respiratory Motion for Real-Time Tumour
 Our implementation of RTRL is based on chapter 15 ("Dynamically Driven Recurrent Networks") of the following book :
 Haykin, Simon S. "Neural networks and learning machines/Simon Haykin." (2009).
 
-Two main functions can be executed :
+Three main functions can be executed :
  1) one corresponds to the file "prediction_main.m"
  2) the second corresponds to the file "hyperparameter_optimization_main.m".
+ 3) the third corresponds to the file "convert_csv_to_mat.m"
  
 "prediction_main.m" performs prediction for a given prediction method and set of hyper-parameters, which can be set manually in the files "pred_par.xlsx" and "load_pred_par.m".
 The results are saved in the folders "2. Prediction results (figures)", "3. Prediction results (images)", and "5. Log txt files".
@@ -36,6 +37,8 @@ It can also be used without that toolbox by replacing all the "parfor" instructi
 One can also use GPU computing to try to make the RNN calculations faster by setting the variable "beh_par.GPU_COMPUTING" to true.
 In that case, the parallel processing toolbox of Matlab is required.
 Calculations are faster with the GPU when using RTRL with a relatively high number of hidden units.
+
+"convert_csv_to_mat.m" converts the original csv data from the article by Krilavicius et al. in the "Original data" folder into the "data.mat" files in the "Input time series sequences" folder that "prediction_main.m" and "hyperparameter_optimization_main.m" can use.
 
  	
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prediction-of-the-position-of-external/multivariate-time-series-forecasting-on-3)](https://paperswithcode.com/sota/multivariate-time-series-forecasting-on-3?p=prediction-of-the-position-of-external)
