@@ -1,5 +1,5 @@
 function [myRNN] = rnn_UORO( myRNN, pred_par, beh_par, Xdata, Ydata)
-% rnn_UORO performs the training of a recurrent neural network (RNN) trained with unbiased online recurrent optimization (UORO) and gradient clipping.
+% rnn_UORO trains a recurrent neural network (RNN) with unbiased online recurrent optimization (UORO) and gradient clipping.
 % Input variables :
 %   - myRNN : RNN structure previously initialized by the function "initialize_rnn"
 %   - pred_par is the structure containing the parameters used for prediction
