@@ -4,8 +4,11 @@ trained by real-time recurrent learning (RTRL), unbiased online recurrent optimi
 The figure below gives an example of prediction 2.0s in advance with UORO (the sampling rate is 10Hz). 
 ![alt text](prediction_UORO.png "prediction with UORO for sequence 4 and a horizon of 2.0s")
 
-This code supports the claims in the following article:
-Pohl, Michel, et al. “Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy.” ArXiv:2106.01100 [Cs, Eess], May 2022. arXiv.org, http://arxiv.org/abs/2106.01100.
+This code supports the claims in the following research article:
+Pohl, Michel, et al. "Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy", Computer Methods and Programs in Biomedicine (2022): 106908. 
+You can access it with the following links:
+ - https://doi.org/10.1016/j.cmpb.2022.106908 (journal version with restricted access)
+ - http://arxiv.org/abs/2106.01100 (accepted manuscript version, openly available)
 Please consider citing our article if you use this code in your research.
 
 The data provided in the directories "1. Input time series sequences" and "Original data" consists of the three-dimensional position of external markers placed on the chest and abdomen of healthy individuals breathing during intervals from 73s to 222s. The markers move because of the respiratory motion, and their position is sampled at approximately 10Hz.
