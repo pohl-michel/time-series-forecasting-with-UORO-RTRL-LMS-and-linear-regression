@@ -9,6 +9,7 @@ Pohl, Michel, et al. "Prediction of the Position of External Markers Using a Rec
 You can access it with the following links:
  - https://doi.org/10.1016/j.cmpb.2022.106908 (journal version with restricted access)
  - https://doi.org/10.48550/arXiv.2106.01100 (accepted manuscript version, openly available)
+
 Please consider citing our article if you use this code in your research.
 
 The data provided in the directories "1. Input time series sequences" and "Original data" consists of the three-dimensional position of external markers placed on the chest and abdomen of healthy individuals breathing during intervals from 73s to 222s. The markers move because of the respiratory motion, and their position is sampled at approximately 10Hz.
