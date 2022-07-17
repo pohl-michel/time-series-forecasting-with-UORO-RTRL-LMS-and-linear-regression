@@ -14,7 +14,7 @@ Please consider citing our article if you use this code in your research.
 
 Also, please do not hesitate to read my blog article summarizing this research and share it or leave a comment if you are interested:
  - https://medium.com/towards-data-science/forecasting-respiratory-motion-using-online-learning-of-rnns-for-safe-radiotherapy-bdf4947ad22f (Medium)
- - https://pohl-michel.github.io/blog/articles/predicting-respiratory-motion-online-learning-rnn/article.html (personnal blog)
+ - https://pohl-michel.github.io/blog/articles/predicting-respiratory-motion-online-learning-rnn/article.html (personal blog)
 
 The data provided in the directories "1. Input time series sequences" and "Original data" consists of the three-dimensional position of external markers placed on the chest and abdomen of healthy individuals breathing during intervals from 73s to 222s. The markers move because of the respiratory motion, and their position is sampled at approximately 10Hz.
 The same data was used and described in the following article:
