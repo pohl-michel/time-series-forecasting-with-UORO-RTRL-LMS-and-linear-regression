@@ -5,7 +5,7 @@ The figure below gives an example of prediction 2.0s in advance with UORO (the s
 ![alt text](prediction_UORO.png "prediction with UORO for sequence 4 and a horizon of 2.0s")
 
 This code supports the claims in the following research article:
-Pohl, Michel, et al. "Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy", Computer Methods and Programs in Biomedicine (2022): 106908. 
+Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, "Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy", Computer Methods and Programs in Biomedicine (2022): 106908. 
 You can access it with the following links:
  - https://doi.org/10.1016/j.cmpb.2022.106908 (journal version with restricted access)
  - https://doi.org/10.48550/arXiv.2106.01100 (accepted manuscript version, openly available)
@@ -29,7 +29,7 @@ Three main functions can be executed :
  2) the second corresponds to the file "hyperparameter_optimization_main.m".
  3) the third corresponds to the file "convert_csv_to_mat.m"
  
-"prediction_main.m" performs prediction for a given prediction method and set of hyper-parameters, which can be set manually in the files "pred_par.xlsx" and "load_pred_par.m".
+"prediction_main.m" performs prediction for a given prediction method and set of hyper-parameters, which can be selected manually in the files "pred_par.xlsx" and "load_pred_par.m".
 The results are saved in the folders "2. Prediction results (figures)", "3. Prediction results (images)", and "5. Log txt files".
 The log files contain information relative to the numerical accuracy of the prediction.
 The behavior of that main function can be set manually in the file "load_behavior_parameters.m".
@@ -41,9 +41,9 @@ The set of hyper-parameters used can be selected manually in the file "load_hype
 
 "hyperparameter_optimization_main.m" uses parallel computations to make grid search faster.
 Therefore, the parallel processing toolbox of Matlab is normally required to use "hyperparameter_optimization_main.m".
-It can also be used without that toolbox by replacing all the "parfor" instructions by "for" instructions, at the expense of a higher processing time.
+It can also be used without that toolbox by replacing all the `parfor` instructions by `for` instructions, at the expense of a higher processing time.
 
-One can also use GPU computing to try to make the RNN calculations faster by setting the variable "beh_par.GPU_COMPUTING" to true.
+One can also use GPU computing to try to make the RNN calculations faster by setting the variable `beh_par.GPU_COMPUTING` to `true`.
 In that case, the parallel processing toolbox of Matlab is required.
 Calculations are faster with the GPU when using RTRL with a relatively high number of hidden units.
 
