@@ -24,7 +24,7 @@ https://doi.org/10.48550/arXiv.1508.00749.
 Our implementation of RTRL is based on chapter 15 ("Dynamically Driven Recurrent Networks") of the following book :
 Haykin, Simon S. "Neural networks and learning machines/Simon Haykin." (2009).
 
-Three main functions can be executed :
+Three scripts can be executed :
  1) one corresponds to the file "prediction_main.m"
  2) the second corresponds to the file "hyperparameter_optimization_main.m".
  3) the third corresponds to the file "convert_csv_to_mat.m"
