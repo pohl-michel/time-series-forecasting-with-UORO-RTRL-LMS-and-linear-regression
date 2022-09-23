@@ -87,7 +87,7 @@ function [M,heading] = file_to_matrix(name)
         ii = find(a==';');
         a(ii) = ',';
         M = [M; str2num(a)];
-    end;
+    end
     
     M = M - ones(size(M,1),1)*M(1,:);
     fclose(fid);
