@@ -35,13 +35,13 @@ function [myRNN] = rnn_UORO( myRNN, pred_par, beh_par, Xdata, Ydata)
         u = Xdata(:,t); % input vector of size m+1
         [z, new_x] = RNN_state_fwd_prop(myRNN, u, myRNN.x);
             % we need z to compute myRNN.dtheta_g
-        myRNN.Ypred(:,t) = myRNN.Wc*myRNN.x; 
-            % here we do not use new_x. myRNN.x is updated at the end of the loop
+        myRNN.Ypred(:,t) = myRNN.Wc*new_x; 
+            % myRNN.x is updated at the end of the loop
         e = Ydata(:,t) - myRNN.Ypred(:,t);
 
         dx = -transpose(e)*myRNN.Wc; 
           
-        myRNN.dtheta(:,idx_min_Wc:nb_weights) = reshape(-e*(myRNN.x.'), [1, p*q]); 
+        myRNN.dtheta(:,idx_min_Wc:nb_weights) = reshape(-e*(new_x.'), [1, p*q]); 
         
         % gradient estimate computation
         gtilde = (dx*myRNN.xtilde)*myRNN.theta_tilde + myRNN.dtheta;
