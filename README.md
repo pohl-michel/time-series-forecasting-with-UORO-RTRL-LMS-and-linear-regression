@@ -1,3 +1,8 @@
+Update (10th October 2024): An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction.
+That new repository focuses on video forecasting but the "Time_series_forecasting" folder is mostly the same, with several improvements, including the addition of other online algorithms for RNNs (decoupled neural interfaces, sparse 1-step approximation, and a simple version of real-time recurrent learning) and other evaluation metrics for general time series (not necessarily representing the motion of 3D objects).
+
+----------------------------------------------
+
 This program predicts multidimensional time-series data using a recurrent neural network (RNN)
 trained by real-time recurrent learning (RTRL), unbiased online recurrent optimization (UORO), least mean squares (LMS), or multivariate linear regression.
 
