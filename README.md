@@ -1,5 +1,5 @@
 Update (10th October 2024): An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction.
-That new repository focuses on video forecasting but the "Time_series_forecasting" folder is mostly the same, with several improvements, including the addition of other online algorithms for RNNs (decoupled neural interfaces, sparse 1-step approximation, and a simple version of real-time recurrent learning) and other evaluation metrics for general time series (not necessarily representing the motion of 3D objects).
+That new repository focuses on video forecasting but the ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/tree/main/Time_series_forecasting) is mostly the same, with several improvements, including the addition of other online algorithms for RNNs (decoupled neural interfaces, sparse 1-step approximation, and a simple version of real-time recurrent learning) and other evaluation metrics for general time series (not necessarily representing the motion of 3D objects).
 
 ----------------------------------------------
 
