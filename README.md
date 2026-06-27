@@ -1,5 +1,5 @@
 Update (10th October 2024): An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction.
-That new repository focuses on video forecasting but the ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/tree/main/Time_series_forecasting) is mostly the same, with several improvements, including the addition of other online algorithms for RNNs (decoupled neural interfaces, sparse 1-step approximation, and a simple version of real-time recurrent learning) and other evaluation metrics for general time series (not necessarily representing the motion of 3D objects).
+That new repository focuses on video forecasting but the ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/blob/main/Time_series_forecasting/README.md) is mostly the same, with several improvements, including the addition of other online algorithms for RNNs (decoupled neural interfaces, sparse 1-step approximation, and a simple version of real-time recurrent learning) and other evaluation metrics for general time series (not necessarily representing the motion of 3D objects).
 
 ----------------------------------------------
 
@@ -53,6 +53,3 @@ In that case, the parallel processing toolbox of Matlab is required.
 Calculations are faster with the GPU when using RTRL with a relatively high number of hidden units.
 
 "convert_csv_to_mat.m" converts the original csv data from the article by Krilavicius et al. in the "Original data" folder into the "data.mat" files in the "Input time series sequences" folder that "prediction_main.m" and "hyperparameter_optimization_main.m" can use.
-
- 	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prediction-of-the-position-of-external/multivariate-time-series-forecasting-on-3)](https://paperswithcode.com/sota/multivariate-time-series-forecasting-on-3?p=prediction-of-the-position-of-external)
