@@ -1,7 +1,6 @@
 # Multivariate respiratory-motion time-series forecasting using RNNs trained with UORO and RTRL
 
-**Note**: An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction.
-Its ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/blob/main/Time_series_forecasting/README.md) extends the current repository with the addition of other evaluation metrics for general time series (not necessarily representing the motion of 3D objects) as well as of other online algorithms for RNNs (decoupled neural interfaces, sparse one-step approximation, and a simpler implementation of real-time recurrent learning), an SVR baseline, and both sequence-specific and population-based encoder-only transformers.
+**Note**: This repository contains the original code supporting my [academic paper on UORO](https://doi.org/10.48550/arXiv.2106.01100) published in 2022 (see ["References"](#references) section). An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction. Its ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/blob/main/Time_series_forecasting/README.md) extends the current repository with the addition of other evaluation metrics for general time series (not necessarily representing the motion of 3D objects) as well as of other online algorithms for RNNs (decoupled neural interfaces, sparse one-step approximation, and a simpler implementation of real-time recurrent learning), an SVR baseline, and both sequence-specific and population-based encoder-only transformers.
 
 ## Overview
 
@@ -50,10 +49,7 @@ Calculations are faster with the GPU when using RTRL with a relatively high numb
 ## References
 
 This code supports the claims in the following research article:
-Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, "Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy", Computer Methods and Programs in Biomedicine (2022): 106908. 
-You can access it with the following links:
- - https://doi.org/10.1016/j.cmpb.2022.106908 (journal version with restricted access)
- - https://doi.org/10.48550/arXiv.2106.01100 (accepted manuscript version, openly available)
+Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, ["Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy"](https://doi.org/10.1016/j.cmpb.2022.106908), Computer Methods and Programs in Biomedicine (2022): 106908. [arXiv](https://doi.org/10.48550/arXiv.2106.01100)
 
 Please consider citing our article if you use this code in your research.
 
