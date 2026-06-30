@@ -7,6 +7,7 @@
 This repository contains MATLAB code for forecasting multivariate time-series data. Specifically, the code implements vanilla RNNs trained online with unbiased online recurrent optimization (UORO) or real-time recurrent learning (RTRL), together with least mean squares (LMS) and ordinary least-squares linear autoregressive baselines. The data provided here consists of the 3D positions of external markers on the chest and abdomen of individuals lying face up during breathing. 
 
 The figure below gives an example of prediction 2.0s in advance with UORO (the sampling rate is 10Hz). 
+
 ![alt text](prediction_UORO.png "prediction with UORO for sequence 4 and a horizon of 2.0s")
 
 Our implementation of RTRL is based on chapter 15 ("Dynamically Driven Recurrent Networks") of the following book :
@@ -26,15 +27,15 @@ Three scripts can be executed :
  2) the second corresponds to the file "hyperparameter_optimization_main.m".
  3) the third corresponds to the file "convert_csv_to_mat.m"
  
-"prediction_main.m" performs prediction for a given prediction method and set of hyper-parameters, which can be selected manually in the files "pred_par.xlsx" and "load_pred_par.m".
+"prediction_main.m" performs prediction for a given prediction method and set of hyperparameters, which can be selected manually in the files "pred_par.xlsx" and "load_pred_par.m".
 The results are saved in the folders "2. Prediction results (figures)", "3. Prediction results (images)", and "5. Log txt files".
 The log files contain information relative to the numerical accuracy of the prediction.
 The behavior of that main function can be set manually in the file "load_behavior_parameters.m".
 The time-series sequences used can be selected in the file "load_path_parameters.m", by commenting or uncommenting the corresponding text strings.
 Parameters relative to display can be selected manually in the file "disp_par.xlsx".
 
-"hyperparameter_optimization_main.m" performs grid search on the cross-validation set to determine the optimal hyper-parameters for each sequence and provide information about the influence of each hyper-parameter on the prediction accuracy.
-The set of hyper-parameters used can be selected manually in the file "load_hyperpar_cv_info.m".
+"hyperparameter_optimization_main.m" performs grid search on the cross-validation set to determine the optimal hyperparameters for each sequence and provide information about the influence of each hyperparameter on the prediction accuracy.
+The set of hyperparameters used can be selected manually in the file "load_hyperpar_cv_info.m".
 
 "hyperparameter_optimization_main.m" uses parallel computations to make grid search faster.
 Therefore, the parallel processing toolbox of Matlab is normally required to use "hyperparameter_optimization_main.m".
