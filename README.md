@@ -1,6 +1,6 @@
 # Multivariate respiratory-motion time-series forecasting using RNNs trained with UORO and RTRL
 
-**Note**: This repository contains the original code supporting my [academic paper on UORO](https://doi.org/10.48550/arXiv.2106.01100) published in 2022 (see ["References"](#references) section). An extension of this repository is available here: https://github.com/pohl-michel/2D-MR-image-prediction. Its ["Time_series_forecasting" folder](https://github.com/pohl-michel/2D-MR-image-prediction/blob/main/Time_series_forecasting/README.md) extends the current repository with the addition of other evaluation metrics for general time series (not necessarily representing the motion of 3D objects) as well as of other online algorithms for RNNs (decoupled neural interfaces, sparse one-step approximation, and a simpler implementation of real-time recurrent learning), an SVR baseline, and both sequence-specific and population-based encoder-only transformers.
+**Note**: This repository contains the original code supporting my paper on UORO published in 2022 (see ["References"](#references) section). A newer consolidated implementation is available in the [`Time_series_forecasting folder`](https://github.com/pohl-michel/2D-MR-image-prediction/blob/main/Time_series_forecasting/README.md) of the `2D-MR-image-prediction` repository, which contains additional online learning algorithms for RNNs (DNI and SnAp-1), transformer models, and more general evaluation settings.
 
 ## Overview
 
