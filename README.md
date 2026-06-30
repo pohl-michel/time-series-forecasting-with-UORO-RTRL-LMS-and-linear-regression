@@ -50,10 +50,9 @@ Calculations are faster with the GPU when using RTRL with a relatively high numb
 ## References
 
 This code supports the claims in the following research article:
-Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, ["Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy"](https://doi.org/10.1016/j.cmpb.2022.106908), Computer Methods and Programs in Biomedicine (2022): 106908. [arXiv](https://doi.org/10.48550/arXiv.2106.01100)
 
-Please consider citing our article if you use this code in your research.
+Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, Ritu Bhusal Chhatkuli, "Prediction of the Position of External Markers Using a Recurrent Neural Network Trained With Unbiased Online Recurrent Optimization for Safe Lung Cancer Radiotherapy", Computer Methods and Programs in Biomedicine (2022): 106908. [[Published version]](https://doi.org/10.1016/j.cmpb.2022.106908) [[arXiv]](https://doi.org/10.48550/arXiv.2106.01100)
 
-Also, please do not hesitate to read my blog article summarizing this research and share it or leave a comment if you are interested:
- - https://medium.com/towards-data-science/forecasting-respiratory-motion-using-online-learning-of-rnns-for-safe-radiotherapy-bdf4947ad22f (Medium)
- - https://pohl-michel.github.io/blog/articles/predicting-respiratory-motion-online-learning-rnn/article.html (personal blog)
+Please consider citing our article if you use this code in your research. An accessible summary of this work is available as a Towards Data Science Editors’ Pick article, also mirrored on my personal blog:
+
+Michel Pohl, "Predicting respiratory motion using online learning of recurrent neural networks for safer lung radiotherapy", Towards Data Science (2022) [[Medium]](https://medium.com/towards-data-science/forecasting-respiratory-motion-using-online-learning-of-rnns-for-safe-radiotherapy-bdf4947ad22f) [[Personal blog]](https://pohl-michel.github.io/blog/articles/predicting-respiratory-motion-online-learning-rnn/article.html)
